@@ -1,0 +1,18 @@
+// 清除浮动，原子类
+.clear {
+  zoom: 1;
+}
+
+.clear::after {
+  display: table;
+  clear: both;
+  height: 0;
+  content: ' ';
+}
+
+// 单行文本溢出显示省略号，原子类
+.ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
